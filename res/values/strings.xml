@@ -3,5 +3,11 @@
 
     <string name="app_name">Baccarat</string>
     <string name="action_settings">Settings</string>
+    
+    <string name="Banker_Button_Init_Value">Banker</string>
+    <string name="Player_Button_Init_Value">Player</string>
+    <string name="Draw_Button_Init_Value">Draw</string>
+
+    <string name="Bet_Count_TextView_Init_Value">Total Bet: 0 </string>
 
 </resources>

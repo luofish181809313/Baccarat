@@ -1,11 +1,84 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+	android:orientation="vertical"
     tools:context=".MainActivity" >
 
-</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/buttonsRelativeLayout"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttonBetBanker"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/buttonBetPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@+string/Banker_Button_Init_Value" />
+
+        <Button
+            android:id="@+id/buttonBetPlayer"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@+string/Player_Button_Init_Value" />
+
+        <Button
+            android:id="@+id/buttonBetDraw"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/buttonBetPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@+string/Draw_Button_Init_Value" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:baselineAligned="@+id/buttonsRelativeLayout"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+      	<TextView
+	        android:id="@+id/textViewBetCount"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@+string/Bet_Count_TextView_Init_Value"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+      	
+      	<TextView
+	        android:id="@+id/textViewLast3rdRecord"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text=""
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+      	
+      	<TextView
+	        android:id="@+id/textViewLast2ndRecord"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text=""
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+      	
+      	 <TextView
+	        android:id="@+id/textViewLast1stRecord"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text=""
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+      	 
+      	 <TextView
+	        android:id="@+id/textViewStoredBinaryArray"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text=""
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
