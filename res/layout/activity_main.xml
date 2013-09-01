@@ -38,7 +38,7 @@
 
     <LinearLayout
         android:baselineAligned="@+id/buttonsRelativeLayout"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_marginLeft="18dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -49,36 +49,43 @@
 	        android:layout_height="wrap_content"
 	        android:text="@+string/Bet_Count_TextView_Init_Value"
 	        android:textAppearance="?android:attr/textAppearanceMedium" />
-      	
-      	<TextView
-	        android:id="@+id/textViewLast3rdRecord"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:text=""
-	        android:textAppearance="?android:attr/textAppearanceMedium" />
-      	
-      	<TextView
-	        android:id="@+id/textViewLast2ndRecord"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:text=""
-	        android:textAppearance="?android:attr/textAppearanceMedium" />
-      	
-      	 <TextView
-	        android:id="@+id/textViewLast1stRecord"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:text=""
-	        android:textAppearance="?android:attr/textAppearanceMedium" />
-      	 
+      	      	 
       	 <TextView
 	        android:id="@+id/textViewStoredBinaryArray"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:text=""
 	        android:textAppearance="?android:attr/textAppearanceMedium" />
-    </LinearLayout>
+      	 
+      	 <TextView
+	        android:id="@+id/textViewCurrentRandomBinary"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text=""
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+      	 
+      	 <TextView
+	        android:id="@+id/textViewLatest1stRecord"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="000"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+      	     	        	
+      	<TextView
+	        android:id="@+id/textViewLatest2ndRecord"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text=""
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+      	<TextView
+	        android:id="@+id/textViewLatest3rdRecord"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text=""
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 
+ </LinearLayout>
 
 </LinearLayout>
