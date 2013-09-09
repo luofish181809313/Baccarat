@@ -8,6 +8,18 @@
     <string name="Player_Button_Init_Value">Player</string>
     <string name="Draw_Button_Init_Value">Draw</string>
 
+    <string name="Win_TextView_Init_Value">Win :</string>
+    <string name="Lose_TextView_Init_Value">Lose :</string>
+    <string name="Draw_TextView_Init_Value">Draw :</string>
+    
     <string name="Bet_Count_TextView_Init_Value">Total Bet: 0 </string>
+    <string name="Stored_Binary_TextView_Init_Value">Storing Binary: </string>
+    <string name="Random_Binary_TextView_Init_Value">Random Binary: </string>
+    <string name="Stored_Binary_List_TextView_Init_Value">Stored Binary Library: </string>
+
+    
+    <string name="Back_Dialog_Sure_To_Exit">Are you sure to exit?</string>
+    <string name="Back_Dialog_OK">OK</string>
+    <string name="Back_Dialog_Cancel">Cancel</string>
 
 </resources>

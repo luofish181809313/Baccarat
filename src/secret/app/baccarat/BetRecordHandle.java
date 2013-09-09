@@ -16,6 +16,11 @@ public class BetRecordHandle {
 	}; 
 	
 	public static List<String> storedPostFlopList = new ArrayList<String>();
+	public static List<String> crazyModeBinaryList = new ArrayList<String>();
 	public static List<String> betRecordHistory = new ArrayList<String>();
+	
+	public static int winCounts;
+	public static int lostCounts;
+	public static int drawCOunts;
 
 }

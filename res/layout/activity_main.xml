@@ -1,91 +1,126 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainRelativeLayout"
     android:layout_height="fill_parent"
     android:layout_width="fill_parent"
 	android:orientation="vertical"
     tools:context=".MainActivity" >
 
-    <RelativeLayout
-        android:id="@+id/buttonsRelativeLayout"
-        android:layout_marginTop="40dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+<RelativeLayout
+    android:id="@+id/buttonsRelativeLayout"
+    android:layout_marginTop="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
 
-        <Button
-            android:id="@+id/buttonBetBanker"
-            android:layout_marginRight="20dp"
-            android:layout_toLeftOf="@+id/buttonBetPlayer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@+string/Banker_Button_Init_Value" />
-
-        <Button
-            android:id="@+id/buttonBetPlayer"
-            android:layout_centerInParent="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@+string/Player_Button_Init_Value" />
-
-        <Button
-            android:id="@+id/buttonBetDraw"
-            android:layout_marginLeft="20dp"
-            android:layout_toRightOf="@+id/buttonBetPlayer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@+string/Draw_Button_Init_Value" />
-
-    </RelativeLayout>
-
-    <LinearLayout
-        android:baselineAligned="@+id/buttonsRelativeLayout"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="18dp"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/buttonBetBanker"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/buttonBetPlayer"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
-      	<TextView
-	        android:id="@+id/textViewBetCount"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:text="@+string/Bet_Count_TextView_Init_Value"
-	        android:textAppearance="?android:attr/textAppearanceMedium" />
-      	      	 
-      	 <TextView
-	        android:id="@+id/textViewStoredBinaryArray"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:text=""
-	        android:textAppearance="?android:attr/textAppearanceMedium" />
-      	 
-      	 <TextView
-	        android:id="@+id/textViewCurrentRandomBinary"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:text=""
-	        android:textAppearance="?android:attr/textAppearanceMedium" />
-      	 
-      	 <TextView
-	        android:id="@+id/textViewLatest1stRecord"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:text="000"
-	        android:textAppearance="?android:attr/textAppearanceMedium" />
-      	     	        	
-      	<TextView
-	        android:id="@+id/textViewLatest2ndRecord"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:text=""
-	        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:text="@+string/Banker_Button_Init_Value" />
 
-      	<TextView
-	        android:id="@+id/textViewLatest3rdRecord"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:text=""
-	        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <Button
+        android:id="@+id/buttonBetPlayer"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+string/Player_Button_Init_Value" />
 
+    <Button
+        android:id="@+id/buttonBetDraw"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/buttonBetPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+string/Draw_Button_Init_Value" />
+
+</RelativeLayout>
+
+<LinearLayout
+	android:layout_marginTop="40dp"
+	android:layout_marginLeft="18dp"
+	android:layout_marginRight="18dp"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+
+    <TextView
+	    android:id="@+id/textViewBetCount"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@+string/Bet_Count_TextView_Init_Value"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewStoredBinaryArray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+string/Stored_Binary_TextView_Init_Value"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewCurrentRandomBinary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+string/Random_Binary_TextView_Init_Value"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<View  
+		android:layout_height="1dp"
+		android:layout_marginTop="7dp"
+		android:layout_marginBottom="7dp" 
+		android:background="#000000"
+		android:layout_width="fill_parent"/>
+
+    <TextView
+        android:id="@+id/textViewLatest1stRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewLatest2ndRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView 
+        android:id="@+id/textViewLatest3rdRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
  </LinearLayout>
+
+<View  
+    android:layout_height="1dp"
+    android:layout_width="fill_parent"
+    android:layout_marginLeft="18dp"
+	android:layout_marginRight="18dp"
+    android:layout_marginTop="7dp"
+    android:background="#000000"/>
+
+<LinearLayout
+    android:id="@+id/textViewBetStatusLinearLayout"
+	android:layout_marginTop="10dp"
+	android:layout_marginLeft="18dp"
+	android:layout_marginRight="18dp"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"  >
+    
+    <TextView 
+        android:id="@+id/textViewStoredBinaryList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+string/Stored_Binary_List_TextView_Init_Value"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</LinearLayout>
+
 
 </LinearLayout>
