@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -73,7 +74,8 @@ public class MainActivity extends Activity {
 		showBet();
 		
 		storedPostFlop = new char[MAX_RANDOM_BINARY_SCOPE];
-//		historyRecord = new char[MAX_RANDOM_BINARY_SCOPE];
+
+		showRecord();
 	}
 
 	private void displayedWedgetInit() {
@@ -145,7 +147,7 @@ public class MainActivity extends Activity {
 			} else if (betCursorInBinaryArray == MAX_RANDOM_BINARY_SCOPE){
 				checkBinary();
 				showBet();
-				// TODO: Add reminder that you lose all your money
+				Toast.makeText(this, "Oh No! ³¶·É»úµ°ÁË", Toast.LENGTH_LONG).show(); 
 			}
 		}
 		showRecord();
@@ -216,14 +218,9 @@ public class MainActivity extends Activity {
 	}
 	
 	private void storeBetRecord(int postFlop, int winOrLose) {
-		
-//		historyRecord[recordCursorInHistoryArray] = (char)postFlop;
-//		recordCursorInHistoryArray++;
-		
+
 		if (WIN == winOrLose || (betCursorInBinaryArray == MAX_RANDOM_BINARY_SCOPE)) {
 			BetRecordHandle.betRecordHistory.add(String.valueOf(randomBinaryArray));
-//			recordCursorInHistoryArray = 0;
-//			historyRecord = new char[MAX_RANDOM_BINARY_SCOPE];
 		}
 		
 		if (DRAW != postFlop) {

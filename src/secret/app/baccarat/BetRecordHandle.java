@@ -6,13 +6,13 @@ import java.util.List;
 public class BetRecordHandle {
 	
 	public static int[][] betMoney = {
-		{1, 2, 3},
-		{4, 5, 6},
-		{7, 8, 9},
-		{10, 11, 12},
-		{13, 14, 15},
-		{16, 17, 18},
-		{19, 20, 21}
+		{100, 200, 0},
+		{400, 400, 100},
+		{1100, 1100, 200},
+		{2600, 2600, 300},
+		{6000, 6000, 700},
+		{13600, 13600, 1500},
+		{30800, 30800, 3500}
 	}; 
 	
 	public static List<String> storedPostFlopList = new ArrayList<String>();
