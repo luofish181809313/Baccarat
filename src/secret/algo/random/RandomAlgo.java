@@ -18,11 +18,14 @@ public class RandomAlgo {
 		int randomNumber = randomFloatList.indexOf(seed);
 		String randomBinaryString = Integer.toBinaryString(randomNumber);
 		int requiredBinaryLength = Integer.toBinaryString((scopeMax - 1)).length();
-		if (randomBinaryString.length() < requiredBinaryLength) {
-			for (int i = 0; i < ((requiredBinaryLength - randomBinaryString.length()) + 1); i++) {
+		int currentRandomStringLength = randomBinaryString.length();
+		
+		while (randomBinaryString.length() < requiredBinaryLength) {
+			for (int i = 0; i < (requiredBinaryLength - currentRandomStringLength); i++) {
 				randomBinaryString = "0" + randomBinaryString;
 			}
 		}
+		
 		char[] randomBinaryNumberArray = randomBinaryString.toCharArray();
 
 		return randomBinaryNumberArray;

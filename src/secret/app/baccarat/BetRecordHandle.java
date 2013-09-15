@@ -6,7 +6,7 @@ import java.util.List;
 public class BetRecordHandle {
 	
 	public static int[][] betMoney = {
-		{100, 200, 0},
+		{100, 100, 0},
 		{400, 400, 100},
 		{1100, 1100, 200},
 		{2600, 2600, 300},
