@@ -87,6 +87,7 @@ public class MainActivity extends Activity {
 		drawButton.setOnClickListener(buttonListener);
 
 		betCount = (TextView) findViewById(betCountId);
+
 		latest1stRecord = (TextView) findViewById(latest1stRecordId);
 		latest2ndRecord = (TextView) findViewById(latest2ndRecordId);
 		latest3rdRecord = (TextView) findViewById(latest3rdRecordId);
@@ -147,7 +148,7 @@ public class MainActivity extends Activity {
 			} else if (betCursorInBinaryArray == MAX_RANDOM_BINARY_SCOPE){
 				checkBinary();
 				showBet();
-				Toast.makeText(this, "Oh No! 扯飞机蛋了", Toast.LENGTH_LONG).show(); 
+				Toast.makeText(this, "Oh No! 拉JB倒，输完了", Toast.LENGTH_LONG).show(); 
 			}
 		}
 		showRecord();
@@ -165,6 +166,7 @@ public class MainActivity extends Activity {
 				if (MAX_STORED_RANDOM_SCOPE == storedBinaryLength) {
 					BetRecordHandle.crazyModeBinaryList.addAll(BetRecordHandle.storedPostFlopList);
 					BetRecordHandle.storedPostFlopList.clear();
+
 				}
 
 				if (BetRecordHandle.crazyModeBinaryList.size() != 0) {
@@ -172,7 +174,9 @@ public class MainActivity extends Activity {
 							.get(random.getRandomDecimal(MAX_STORED_RANDOM_SCOPE + 1))
 							.toCharArray();
 				}
-
+				
+				betCursorInBinaryArray = 0;
+				
 			} else {
 				if (storedBinaryLength < MAX_STORED_RANDOM_SCOPE) {
 					randomBinaryArray = random.getRandomBinary(SCOPE_MAX);
